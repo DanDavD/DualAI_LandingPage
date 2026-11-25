@@ -1,4 +1,4 @@
-import { Download, Laptop, Monitor } from "lucide-react";
+import { ArrowUpRight, Download, Laptop, Monitor } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/site";
 
 type PlatformKey = "macos" | "windows";
@@ -137,6 +137,20 @@ export function DownloadSection() {
               </div>
             );
           })}
+        </div>
+
+        {/* Discreet Release Notes & All Releases Link */}
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-2 font-mono text-xs text-[#71717a]">
+          <span className="tabular-nums">Release v{SITE_CONFIG.version} · Published on GitHub</span>
+          <a
+            href={SITE_CONFIG.downloads.releaseTagUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-[#a1a1aa] underline decoration-[#27272a] underline-offset-4 transition-colors hover:text-[#fafafa] hover:decoration-[#fafafa]"
+          >
+            <span>View release notes &amp; all installers (v1.0.0)</span>
+            <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={1.5} />
+          </a>
         </div>
 
         {/* 3 Numbered Onboarding Steps */}

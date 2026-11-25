@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { SmoothAnchorLink } from "@/components/SmoothAnchorLink";
 
 const NAV_ITEMS = [
-  { label: "Product", href: "/#product" },
-  { label: "Security", href: "/#security" },
-  { label: "Pricing", href: "/#pricing" },
-  { label: "Download", href: "/#download" },
+  { label: "Product", sectionId: "product" },
+  { label: "Security", sectionId: "security" },
+  { label: "Pricing", sectionId: "pricing" },
+  { label: "Download", sectionId: "download" },
 ] as const;
 
 export function SiteHeader() {
@@ -21,23 +22,23 @@ export function SiteHeader() {
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-8 md:flex">
           {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
+            <SmoothAnchorLink
+              key={item.sectionId}
+              sectionId={item.sectionId}
               className="text-[13px] font-medium text-[#a1a1aa] transition-colors hover:text-[#fafafa]"
             >
               {item.label}
-            </Link>
+            </SmoothAnchorLink>
           ))}
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/#download"
+          <SmoothAnchorLink
+            sectionId="download"
             className="inline-flex h-8 items-center justify-center border border-[#27272a] bg-[#18181b] px-3.5 text-xs font-medium text-[#fafafa] transition-colors hover:border-[#3f3f46] hover:bg-[#27272a]"
           >
             Download Free
-          </Link>
+          </SmoothAnchorLink>
         </div>
       </div>
 
@@ -47,13 +48,13 @@ export function SiteHeader() {
         className="flex items-center justify-between border-t border-[#27272a] px-4 py-2 md:hidden"
       >
         {NAV_ITEMS.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
+          <SmoothAnchorLink
+            key={item.sectionId}
+            sectionId={item.sectionId}
             className="font-mono text-[11px] uppercase tracking-wider text-[#a1a1aa] transition-colors hover:text-[#fafafa]"
           >
             {item.label}
-          </Link>
+          </SmoothAnchorLink>
         ))}
       </nav>
     </header>

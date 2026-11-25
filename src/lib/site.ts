@@ -9,10 +9,11 @@ export const SITE_CONFIG = {
   downloads: {
     macosUrl:
       process.env.NEXT_PUBLIC_MACOS_DOWNLOAD_URL ||
-      "https://github.com/DanDavD/DualAI/releases/latest/download/DualAI-1.0.0-arm64.dmg",
+      "https://github.com/DanDavD/DualAI/releases/download/v1.0.0/DualAI-1.0.0-arm64.dmg",
     windowsUrl:
       process.env.NEXT_PUBLIC_WINDOWS_DOWNLOAD_URL ||
-      "https://github.com/DanDavD/DualAI/releases/latest/download/DualAI-1.0.0-x64-setup.exe",
+      "https://github.com/DanDavD/DualAI/releases/download/v1.0.0/DualAI-1.0.0-x64-setup.exe",
+    releaseTagUrl: "https://github.com/DanDavD/DualAI/releases/tag/v1.0.0",
   },
 } as const;
 

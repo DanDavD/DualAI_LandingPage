@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check, Lock, ShieldCheck } from "lucide-react";
 import { DownloadSection } from "@/components/DownloadSection";
+import { SmoothAnchorLink } from "@/components/SmoothAnchorLink";
 import { WorkspacePreview } from "@/components/WorkspacePreview";
 import { CAPABILITIES, PRICING_TIERS } from "@/lib/site";
 
@@ -42,18 +43,18 @@ export default function HomePage() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Link
-              href="/#download"
+            <SmoothAnchorLink
+              sectionId="download"
               className="inline-flex h-10 items-center justify-center bg-[#2563eb] px-5 text-sm font-medium text-[#fafafa] transition-colors hover:bg-[#1d4ed8]"
             >
               Download for macOS &amp; Windows
-            </Link>
-            <Link
-              href="/#pricing"
+            </SmoothAnchorLink>
+            <SmoothAnchorLink
+              sectionId="pricing"
               className="inline-flex h-10 items-center justify-center border border-[#27272a] bg-[#111113] px-5 text-sm font-medium text-[#fafafa] transition-colors hover:border-[#3f3f46] hover:bg-[#18181b]"
             >
               View Pricing
-            </Link>
+            </SmoothAnchorLink>
           </div>
 
           <p className="mt-4 font-mono text-xs text-[#71717a]">
@@ -218,8 +219,8 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-8">
-                  <Link
-                    href="/#download"
+                  <SmoothAnchorLink
+                    sectionId="download"
                     className={`inline-flex h-10 w-full items-center justify-center text-xs font-medium transition-colors ${
                       tier.featured
                         ? "bg-[#2563eb] text-[#fafafa] hover:bg-[#1d4ed8]"
@@ -227,7 +228,7 @@ export default function HomePage() {
                     }`}
                   >
                     {tier.ctaLabel}
-                  </Link>
+                  </SmoothAnchorLink>
                 </div>
               </div>
             ))}
