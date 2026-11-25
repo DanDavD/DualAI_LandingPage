@@ -113,13 +113,21 @@ export default function PrivacyPage() {
 
       <section className="space-y-3">
         <h2 className="text-lg font-medium tracking-[-0.02em] text-[#fafafa]">
-          5. Sub-Processors and Data Transfers
+          5. Website Cookies and Sub-Processors
         </h2>
+        <p>
+          Our website (
+          <span className="font-mono text-xs text-[#fafafa]">{SITE_CONFIG.domain}</span>) does not
+          use third-party advertising trackers, behavioral profiling pixels, or cross-site
+          marketing cookies. Strictly necessary cookies or session storage may be set by Paddle.com
+          only when you initiate a checkout or manage billing through Paddle.
+        </p>
         <p>
           We engage a minimal set of audited infrastructure providers strictly for authentication,
           quota ledger integrity, real-time zero-retention speech processing, and Paddle payment
           billing. We do not sell, rent, or trade your personal information to data brokers or
-          advertising networks.
+          advertising networks. DualAI is intended for professional users aged 18 and older and
+          does not knowingly collect data from children.
         </p>
       </section>
 

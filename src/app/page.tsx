@@ -167,8 +167,8 @@ export default function HomePage() {
               Clear monthly plans in USD.
             </h2>
             <p className="mt-3 text-base leading-relaxed text-[#a1a1aa]">
-              Start with 1 free hour after verifying your email. Upgrade inside the app when you
-              need higher monthly interpretation capacity.
+              Start with 1 free hour after verifying your email inside the desktop app. Paid
+              subscriptions are purchased and managed directly inside DualAI via Paddle Checkout.
             </p>
           </div>
 
@@ -240,7 +240,7 @@ export default function HomePage() {
               <p>
                 All prices are listed in US Dollars (USD). Paid plans renew monthly and can be
                 canceled at any time with immediate effect at the end of the current billing cycle.
-                Eligible purchases are protected by our{" "}
+                All paid subscriptions are covered by our{" "}
                 <Link
                   href="/refunds"
                   className="text-[#fafafa] underline decoration-[#27272a] underline-offset-4 hover:decoration-[#fafafa]"

@@ -26,12 +26,16 @@ export default function TermsPage() {
         </h2>
         <p>
           DualAI (<span className="font-mono text-xs text-[#fafafa]">{SITE_CONFIG.domain}</span>)
-          is a desktop software product operated by{" "}
+          is a downloadable desktop software product operated by{" "}
           <strong className="font-medium text-[#fafafa]">{SITE_CONFIG.companyName}</strong>{" "}
-          (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). DualAI provides real-time
-          bilingual transcription and simultaneous translation for Windows and macOS desktop
-          environments. By creating an account, installing the DualAI desktop application, or
-          purchasing a subscription, you agree to be bound by these Terms of Service and our{" "}
+          (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). DualAI provides automated
+          real-time bilingual transcription and simultaneous translation software for Windows and
+          macOS desktop environments; {SITE_CONFIG.companyName} sells software licenses and usage
+          quotas only and does not provide human interpretation or consulting services. Software
+          installers are delivered electronically via direct download, and paid subscription quotas
+          are provisioned immediately to your verified account upon payment confirmation by Paddle.
+          By creating an account, installing the DualAI desktop application, or purchasing a
+          subscription, you agree to be bound by these Terms of Service and our{" "}
           <Link
             href="/privacy"
             className="text-[#fafafa] underline decoration-[#27272a] underline-offset-4 hover:decoration-[#fafafa]"

@@ -24,12 +24,13 @@ export default function RefundsPage() {
           1. 14-Calendar-Day Refund Window
         </h2>
         <p>
-          Every paid DualAI subscription purchase (Pro, Pro+, or Unlimited) is eligible for a full
-          refund within{" "}
+          Every paid DualAI subscription purchase (Pro, Pro+, or Unlimited) qualifies for a full,
+          no-questions-asked refund within{" "}
           <strong className="font-medium text-[#fafafa]">14 calendar days</strong> of the original
-          transaction date. Because DualAI also provides a 1-hour Free Trial upon email
-          verification with no credit card required, you can evaluate system audio routing and
-          translation accuracy on your exact workstation before upgrading.
+          transaction date, without restrictive usage conditions, in full alignment with Paddle
+          Checkout Buyer Terms. Because DualAI also provides a 1-hour Free Trial upon email
+          verification with no credit card required, you can also test system audio routing and
+          translation quality on your workstation before upgrading.
         </p>
       </section>
 
