@@ -74,16 +74,16 @@ export default function TermsPage() {
             No credit card is required.
           </li>
           <li>
-            <strong className="font-medium text-[#fafafa]">Pro ($6.99 / month):</strong> Includes
+            <strong className="font-medium text-[#fafafa]">Pro ($8.99 / month):</strong> Includes
             40 hours of live audio interpretation per monthly billing cycle.
           </li>
           <li>
-            <strong className="font-medium text-[#fafafa]">Pro+ ($9.99 / month):</strong> Includes
+            <strong className="font-medium text-[#fafafa]">Pro+ ($14.99 / month):</strong> Includes
             70 hours of live audio interpretation per monthly billing cycle and priority email
             support.
           </li>
           <li>
-            <strong className="font-medium text-[#fafafa]">Unlimited ($19.99 / month):</strong>{" "}
+            <strong className="font-medium text-[#fafafa]">Unlimited ($24.99 / month):</strong>{" "}
             Designed for full-time single-user professional interpretation workloads without a
             fixed monthly hour cap, subject to the Single-User Fair Use Policy below.
           </li>

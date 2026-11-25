@@ -49,7 +49,7 @@ export const PRICING_TIERS: readonly PricingTier[] = [
   {
     id: "pro",
     name: "Pro",
-    priceUsd: "$6.99",
+    priceUsd: "$8.99",
     billingUnit: "/ month",
     quotaLabel: "40 hours / month",
     description: "Built for bilingual specialists, researchers, and recurring client sessions.",
@@ -64,7 +64,7 @@ export const PRICING_TIERS: readonly PricingTier[] = [
   {
     id: "pro-plus",
     name: "Pro+",
-    priceUsd: "$9.99",
+    priceUsd: "$14.99",
     billingUnit: "/ month",
     quotaLabel: "70 hours / month",
     description: "Designed for daily medical, legal, and executive interpretation schedules.",
@@ -81,7 +81,7 @@ export const PRICING_TIERS: readonly PricingTier[] = [
   {
     id: "unlimited",
     name: "Unlimited",
-    priceUsd: "$19.99",
+    priceUsd: "$24.99",
     billingUnit: "/ month",
     quotaLabel: "Unlimited hours / month*",
     description: "Uninterrupted monthly capacity for full-time professional interpreters.",
