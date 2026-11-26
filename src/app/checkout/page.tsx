@@ -16,7 +16,7 @@ const CLIENT_TOKEN =
 
 /**
  * Minimal Paddle checkout host. Opened by the DualAI desktop app inside an in-app
- * window with ?_ptxn=<transaction_id>. Paddle.js auto-opens the overlay for that transaction.
+ * window with ?_ptxn=<transaction_id>. Paddle.js auto-opens the inline one-page checkout for that transaction.
  */
 export default function CheckoutPage() {
   const [error, setError] = useState<string | null>(null);
@@ -32,7 +32,12 @@ export default function CheckoutPage() {
           token: CLIENT_TOKEN,
           checkout: {
             settings: {
-              displayMode: "overlay",
+              displayMode: "inline",
+              variant: "one-page",
+              frameTarget: "dualai-checkout-frame",
+              frameInitialHeight: 560,
+              frameStyle:
+                "width:100%; min-width:312px; background-color:transparent; border:none;",
               theme: "dark",
               locale: "en",
               successUrl: `${origin}/checkout/success`,
@@ -56,8 +61,11 @@ export default function CheckoutPage() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0b0d12] text-sm text-white/70">
-      {error ?? "Loading secure checkout…"}
+    <div className="fixed inset-0 z-[100] overflow-y-auto bg-[#0b0d12] px-4 py-6 text-white">
+      <div className="mx-auto w-full max-w-[460px]">
+        {error ? <p className="text-center text-sm text-red-300">{error}</p> : null}
+        <div className="dualai-checkout-frame" />
+      </div>
     </div>
   );
 }
